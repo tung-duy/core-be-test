@@ -3,7 +3,7 @@ services:
   web:
     build: 
       context: .
-    container_name: pos-backend
+    container_name: ${CURRENT_USER}-pos-backend
     restart: always
     ports: 
       - ${PORT}:${PORT}
