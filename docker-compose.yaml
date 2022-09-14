@@ -3,6 +3,9 @@ services:
   web:
     build: 
       context: .
+    labels:
+      user: ${CURRENT_USER}
+      tier: backend
     container_name: ${CURRENT_USER}-pos-backend
     restart: always
     ports: 
